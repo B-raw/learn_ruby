@@ -5,7 +5,7 @@ class Book
     articles = ["and", "in", "the", "of", "a", "an"]
     count = 0
     title_array = @title.split(" ").map! do |word|
-      if count == 0
+      if count ==   0
         count += 1
         word.capitalize
       elsif articles.include?(word)
