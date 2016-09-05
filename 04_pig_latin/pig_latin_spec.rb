@@ -77,5 +77,8 @@ describe "#translate" do
     expect(s).to eq("Idgebray overay ethay Aterway Uaikay")
   end
   # * retain the punctuation from the original phrase
-  
+  it "retains the original punctuation" do
+    s = translate("Hello. Who are you? I am Rick.")
+    expect(s).to eq("Ellohay. Owhay areay ouyay? Iay amay Ickray.")
+  end
 end

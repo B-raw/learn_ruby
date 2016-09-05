@@ -1,6 +1,6 @@
 #write your code here
 def translate(eng_word)
-  @word = eng_word.split(" ")
+  @word = eng_word.split(/\s|\?|\.|\,|\!/)
   @vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
   @word.map! do |words|
     if words == words.capitalize
